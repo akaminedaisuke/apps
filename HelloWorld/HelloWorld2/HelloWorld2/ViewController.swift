@@ -14,7 +14,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-
+    @IBOutlet var mainImage: UIImageView!
+    @IBAction func kakusu(_ sender: Any) {
+        mainImage.isHidden = true;
+    }
+    @IBAction func hyouji(_ sender: Any) {
+        mainImage.isHidden = false;
+        
+    }
 }
-

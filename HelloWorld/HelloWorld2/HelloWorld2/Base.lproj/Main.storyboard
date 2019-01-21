@@ -29,14 +29,34 @@
                                 <rect key="frame" x="202" y="893" width="450" height="468"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKs-Gs-bkA">
+                                <rect key="frame" x="372" y="711" width="56" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="隠す"/>
+                                <connections>
+                                    <action selector="kakusu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d5o-2p-aBy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mre-gE-K6j">
+                                <rect key="frame" x="757" y="711" width="65" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="表示"/>
+                                <connections>
+                                    <action selector="hyouji:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BEW-50-xtg"/>
+                                </connections>
+                            </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="21110905.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="e0h-Oe-i3N">
-                                <rect key="frame" x="372" y="213" width="450" height="468"/>
+                                <rect key="frame" x="372" y="195" width="450" height="468"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="kakusu" destination="8bC-Xf-vdC" id="IVC-aP-qSs"/>
+                        <outlet property="mainImage" destination="e0h-Oe-i3N" id="RRQ-Rv-G15"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
