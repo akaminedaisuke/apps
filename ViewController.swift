@@ -8,41 +8,23 @@
 
 import UIKit
 import AVFoundation
+
 class ViewController: UIViewController {
-    var audioPlayer
+    
+    @IBOutlet var HelloWorld: UILabel!
+    @IBOutlet var mainImage: UIImageView!
+    var audioPlayer : AVAudioPlayer!
+    
+    @IBOutlet var greeting: UIButton!
+        func greeting(){
+        if let sound = NSDataAsset(name: "line-girl1_line-girl1-konnichiha"){
+            player = try?AVAudioPlayer(data: sound.data)
+            player?.play()
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    }
-    @IBOutlet var HelloWorld: UILabel!
-    @IBOutlet var mainImage: UIImageView!
-    //@IBOutlet var greeting: UIButton!
-    let audioPath = Bundle.main.path(forResouce : "line-girl1_line-girl1-konnichiha1" , ofType : "mp3")!
-    let audioUrl = URL(fileURLWithPath : audioPath)
-        
-    var audioError: NSError?
-        do{
-            audioPlayer =  try AVAudioPlayer(contentsOf : audioUrl)
-        }catch let error as NSError{
-            audioError = error
-            audioPlayer = nil
-    }
     
-    if let error = audioError{
-        print("Error／（error.localizedDiscription）")
-    }
-    
-    audioPlayer.delegate = self
-    audioPlayer.prepareToPlay()
-    
-    @IBAction func greeting(_ sender: Any) {
-        if(audioPlayer.isPlaying){
-            audioPlayer.stop()
-            greeting.setTitle("stop" , for: UIControlstate())
-        }
-        else{
-            audioPlayer.play()
-            button.setTitle("play" , for: UIControlstate())
-        }
     }
 }
