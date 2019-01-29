@@ -11,11 +11,13 @@ import AVFoundation
 class ViewController: UIViewController {
     @IBOutlet var CoName: UILabel!
     @IBOutlet var CoLogo: UIImageView!
-    @IBOutlet var message: UILabel!
+    @IBOutlet var mainMessage: UILabel!
+    
     var audioPlayer : AVAudioPlayer! = nil
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        //Do any additional setup after loading the view, typically from a nib.
         let soundFilePath = Bundle.main.path(forResource: "info-lady1_info-lady1-shibarakuomachi1",ofType:"mp3")!
         let sound:URL = URL(fileURLWithPath: soundFilePath)
         do{
@@ -25,14 +27,14 @@ class ViewController: UIViewController {
         }
         audioPlayer.prepareToPlay()
     }
-    @IBAction func sound(_ sender: Any) {
+    
+    @IBAction func Touch(_ sender: Any) {
         audioPlayer.currentTime = 0
         audioPlayer.play()
+        mainMessage.text = "担当者が参ります 暫くお待ち下さい"
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-
 }
 

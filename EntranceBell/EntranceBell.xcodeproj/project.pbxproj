@@ -16,6 +16,7 @@
 		CE1C542121FD8D7E00E01031 /* EntranceBellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C542021FD8D7E00E01031 /* EntranceBellUITests.swift */; };
 		CE1C543021FD8DD400E01031 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1C542F21FD8DD400E01031 /* AVFoundation.framework */; };
 		CE1C74CF21FF018C0030EB3B /* 会社ロゴ.png in Resources */ = {isa = PBXBuildFile; fileRef = CE1C74CE21FF018C0030EB3B /* 会社ロゴ.png */; };
+		CE3B630B22004F1F009239B8 /* info-lady1_info-lady1-shibarakuomachi1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE1C74CD21FF00FD0030EB3B /* info-lady1_info-lady1-shibarakuomachi1.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,11 +106,11 @@
 			isa = PBXGroup;
 			children = (
 				CE1C540021FD8D7D00E01031 /* AppDelegate.swift */,
-				CE1C74CE21FF018C0030EB3B /* 会社ロゴ.png */,
 				CE1C540221FD8D7D00E01031 /* ViewController.swift */,
 				CE1C540421FD8D7D00E01031 /* Main.storyboard */,
-				CE1C74CD21FF00FD0030EB3B /* info-lady1_info-lady1-shibarakuomachi1.mp3 */,
 				CE1C540721FD8D7D00E01031 /* Assets.xcassets */,
+				CE1C74CE21FF018C0030EB3B /* 会社ロゴ.png */,
+				CE1C74CD21FF00FD0030EB3B /* info-lady1_info-lady1-shibarakuomachi1.mp3 */,
 				CE1C540921FD8D7D00E01031 /* LaunchScreen.storyboard */,
 				CE1C540C21FD8D7D00E01031 /* Info.plist */,
 			);
@@ -246,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE3B630B22004F1F009239B8 /* info-lady1_info-lady1-shibarakuomachi1.mp3 in Resources */,
 				CE1C540B21FD8D7D00E01031 /* LaunchScreen.storyboard in Resources */,
 				CE1C74CF21FF018C0030EB3B /* 会社ロゴ.png in Resources */,
 				CE1C540821FD8D7D00E01031 /* Assets.xcassets in Resources */,
