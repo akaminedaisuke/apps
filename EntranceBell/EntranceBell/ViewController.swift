@@ -9,12 +9,10 @@
 import UIKit
 import AVFoundation
 class ViewController: UIViewController {
-    @IBOutlet var CoName: UILabel!
     @IBOutlet var CoLogo: UIImageView!
     @IBOutlet var mainMessage: UILabel!
-    
     var audioPlayer : AVAudioPlayer! = nil
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //Do any additional setup after loading the view, typically from a nib.
@@ -33,8 +31,14 @@ class ViewController: UIViewController {
         audioPlayer.play()
         mainMessage.text = "担当者が参ります 暫くお待ち下さい"
     }
-    override func didReceiveMemoryWarning() {
+    
+    @IBAction func Return(_ sender: Any) {
+        mainMessage.text = "ご来社ありがとうございます。ようこそエヌワンへ！ご用の方は下記のボタンにタッチして下さい。"
+    }
+    
+        override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 }
+
 
