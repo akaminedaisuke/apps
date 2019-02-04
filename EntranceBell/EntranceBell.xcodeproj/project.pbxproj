@@ -15,7 +15,7 @@
 		CE1C541621FD8D7E00E01031 /* EntranceBellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C541521FD8D7E00E01031 /* EntranceBellTests.swift */; };
 		CE1C542121FD8D7E00E01031 /* EntranceBellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C542021FD8D7E00E01031 /* EntranceBellUITests.swift */; };
 		CE1C543021FD8DD400E01031 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1C542F21FD8DD400E01031 /* AVFoundation.framework */; };
-		CE1C74CF21FF018C0030EB3B /* 会社ロゴ.png in Resources */ = {isa = PBXBuildFile; fileRef = CE1C74CE21FF018C0030EB3B /* 会社ロゴ.png */; };
+		CE2258AA220818EF002178F3 /* 会社ロゴ２.png in Resources */ = {isa = PBXBuildFile; fileRef = CE2258A9220818EF002178F3 /* 会社ロゴ２.png */; };
 		CE3B630B22004F1F009239B8 /* info-lady1_info-lady1-shibarakuomachi1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE1C74CD21FF00FD0030EB3B /* info-lady1_info-lady1-shibarakuomachi1.mp3 */; };
 /* End PBXBuildFile section */
 
@@ -52,7 +52,7 @@
 		CE1C542221FD8D7E00E01031 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE1C542F21FD8DD400E01031 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		CE1C74CD21FF00FD0030EB3B /* info-lady1_info-lady1-shibarakuomachi1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "info-lady1_info-lady1-shibarakuomachi1.mp3"; path = "/Users/user/Desktop/EntranceBell/EntranceBell/info-lady1_info-lady1-shibarakuomachi1.mp3"; sourceTree = "<absolute>"; };
-		CE1C74CE21FF018C0030EB3B /* 会社ロゴ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "会社ロゴ.png"; sourceTree = "<group>"; };
+		CE2258A9220818EF002178F3 /* 会社ロゴ２.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "会社ロゴ２.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +109,7 @@
 				CE1C540221FD8D7D00E01031 /* ViewController.swift */,
 				CE1C540421FD8D7D00E01031 /* Main.storyboard */,
 				CE1C540721FD8D7D00E01031 /* Assets.xcassets */,
-				CE1C74CE21FF018C0030EB3B /* 会社ロゴ.png */,
+				CE2258A9220818EF002178F3 /* 会社ロゴ２.png */,
 				CE1C74CD21FF00FD0030EB3B /* info-lady1_info-lady1-shibarakuomachi1.mp3 */,
 				CE1C540921FD8D7D00E01031 /* LaunchScreen.storyboard */,
 				CE1C540C21FD8D7D00E01031 /* Info.plist */,
@@ -249,7 +249,7 @@
 			files = (
 				CE3B630B22004F1F009239B8 /* info-lady1_info-lady1-shibarakuomachi1.mp3 in Resources */,
 				CE1C540B21FD8D7D00E01031 /* LaunchScreen.storyboard in Resources */,
-				CE1C74CF21FF018C0030EB3B /* 会社ロゴ.png in Resources */,
+				CE2258AA220818EF002178F3 /* 会社ロゴ２.png in Resources */,
 				CE1C540821FD8D7D00E01031 /* Assets.xcassets in Resources */,
 				CE1C540621FD8D7D00E01031 /* Main.storyboard in Resources */,
 			);

@@ -2,52 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/user/Desktop/EntranceBell/EntranceBell/&#x4f1a;&#x793e;&#x30ed;&#x30b3;&#x3099;.png">
+      location = "group:&#x4f1a;&#x793e;&#x30ed;&#x30b3;&#x3099;&#xff12;.png">
    </FileRef>
    <FileRef
-      location = "group:../../info-lady1_info-lady1-shibarakuomachi1.mp3">
-   </FileRef>
-   <FileRef
-      location = "group:/Users/user/Desktop/EntranceBell/EntranceBell/info-lady1_info-lady1-shibarakuomachi1.mp3">
-   </FileRef>
-   <Group
-      location = "group:../EntranceBell"
-      name = "EntranceBell">
-      <FileRef
-         location = "group:ViewController.swift">
-      </FileRef>
-      <Group
-         location = "group:Assets.xcassets"
-         name = "Assets.xcassets">
-         <Group
-            location = "group:AppIcon.appiconset"
-            name = "AppIcon.appiconset">
-            <FileRef
-               location = "group:Contents.json">
-            </FileRef>
-         </Group>
-         <FileRef
-            location = "group:Contents.json">
-         </FileRef>
-      </Group>
-      <Group
-         location = "group:Base.lproj"
-         name = "Base.lproj">
-         <FileRef
-            location = "group:LaunchScreen.storyboard">
-         </FileRef>
-         <FileRef
-            location = "group:Main.storyboard">
-         </FileRef>
-      </Group>
-      <FileRef
-         location = "group:AppDelegate.swift">
-      </FileRef>
-      <FileRef
-         location = "group:Info.plist">
-      </FileRef>
-   </Group>
-   <FileRef
-      location = "self:EntranceBell.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>

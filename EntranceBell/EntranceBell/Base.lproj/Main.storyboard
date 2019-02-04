@@ -48,11 +48,6 @@
                                 <color key="textColor" red="1" green="0.066840177700000003" blue="0.071184218270000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="会社ロゴ.png" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xif-jJ-Ppz">
-                                <rect key="frame" x="352" y="193" width="320" height="98"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <rect key="contentStretch" x="0.65000000000000002" y="0.0" width="1" height="1"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C57-em-C5a">
                                 <rect key="frame" x="899" y="45" width="74" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -63,6 +58,10 @@
                                     <action selector="Return:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mj1-hN-GVe"/>
                                 </connections>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="会社ロゴ２.png" translatesAutoresizingMaskIntoConstraints="NO" id="aDL-RV-qZt">
+                                <rect key="frame" x="95" y="226" width="800" height="158"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                         <userDefinedRuntimeAttributes>
@@ -70,7 +69,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <connections>
-                        <outlet property="CoLogo" destination="xif-jJ-Ppz" id="Wao-CF-Xsu"/>
+                        <outlet property="CoLogo" destination="aDL-RV-qZt" id="3Y6-oG-4G6"/>
                         <outlet property="mainMessage" destination="KTM-I5-2Ko" id="36Y-La-Qs5"/>
                     </connections>
                 </viewController>
@@ -80,6 +79,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="会社ロゴ.png" width="320" height="73"/>
+        <image name="会社ロゴ２.png" width="800" height="158"/>
     </resources>
 </document>
