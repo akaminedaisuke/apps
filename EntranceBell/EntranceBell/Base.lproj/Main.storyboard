@@ -4,7 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
+        <deployment version="4144" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,15 +14,15 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EntranceBell" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="wwy-dD-6st"/>
-                        <viewControllerLayoutGuide type="bottom" id="lbZ-Jf-hws"/>
+                        <viewControllerLayoutGuide type="top" id="aFf-ad-vft"/>
+                        <viewControllerLayoutGuide type="bottom" id="l6B-pu-xPg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" propertyAccessControl="none">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o8X-AS-2gC">
-                                <rect key="frame" x="402" y="572" width="221" height="130"/>
+                                <rect key="frame" x="307" y="572" width="428" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
@@ -38,13 +38,18 @@
                                     <action selector="Touch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2ev-sz-a3D"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ご来社ありがとうございます。ようこそエヌワンへ！ご用の方は下記のボタンにタッチして下さい。" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" highlighted="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KTM-I5-2Ko">
-                                <rect key="frame" x="37" y="452" width="967" height="112"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="none" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KTM-I5-2Ko">
+                                <rect key="frame" x="20" y="355" width="967" height="209"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
                                 </accessibility>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="21"/>
+                                <string key="text" base64-UTF8="YES">
+44GU5p2l56S+44GC44KK44GM44Go44GG44GU44GW44GE44G+44GZ44CC44KI44GG44GT44Gd44Ko44OM
+44Ov44Oz44G477yBEREN44GU55So44Gu5pa544Gv44CB5LiL44Gu44Oc44K/44Oz44Gr44K/44OD44OB
+44GX44Gm5LiL44GV44GE44CCA
+</string>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="33"/>
                                 <color key="textColor" red="1" green="0.066840177700000003" blue="0.071184218270000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -59,7 +64,7 @@
                                 </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="会社ロゴ２.png" translatesAutoresizingMaskIntoConstraints="NO" id="aDL-RV-qZt">
-                                <rect key="frame" x="95" y="226" width="800" height="158"/>
+                                <rect key="frame" x="112" y="189" width="800" height="158"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                         </subviews>
@@ -70,6 +75,7 @@
                     </view>
                     <connections>
                         <outlet property="CoLogo" destination="aDL-RV-qZt" id="3Y6-oG-4G6"/>
+                        <outlet property="button" destination="o8X-AS-2gC" id="Xo8-U1-XPn"/>
                         <outlet property="mainMessage" destination="KTM-I5-2Ko" id="36Y-La-Qs5"/>
                     </connections>
                 </viewController>
