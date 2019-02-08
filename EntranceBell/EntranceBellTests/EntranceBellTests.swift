@@ -30,5 +30,10 @@ class EntranceBellTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    //２月７日に変更（Touchメソッドのテストを行おうとした）
+   // func testTouch(){
+       // let testBell = ViewController()
+    //}
+
 
 }

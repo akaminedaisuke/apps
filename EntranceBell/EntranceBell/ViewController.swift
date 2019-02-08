@@ -35,16 +35,18 @@ class ViewController: UIViewController {
         }
         audioPlayer.prepareToPlay()
     }
+    
     //呼び出し（Touchボタン）のアクション
     @IBAction func Touch(_ sender: Any) {
         audioPlayer.currentTime = 0
         audioPlayer.play()
         mainMessage.text = "担当者が参ります 暫くお待ち下さい"
+        //Touchボタン押下後、一定時間で元のメッセージへ戻す
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5){
+            self.mainMessage.text = "ご来社ありがとうございます。ようこそエヌワンへ！\nご用の方は下のボタンにタッチして下さい。"
+        }
     }
-    //Returnボタンのアクション
-    @IBAction func Return(_ sender: Any) {
-        mainMessage.text = "ご来社ありがとうございます。ようこそエヌワンへ！\nご用の方は下のボタンにタッチして下さい。"
-    }
+    
     override func didReceiveMemoryWarning(){
         super.didReceiveMemoryWarning()
     }

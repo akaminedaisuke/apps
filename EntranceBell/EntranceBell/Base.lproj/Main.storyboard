@@ -53,16 +53,6 @@
                                 <color key="textColor" red="1" green="0.066840177700000003" blue="0.071184218270000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C57-em-C5a">
-                                <rect key="frame" x="899" y="45" width="74" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Return">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="Return:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mj1-hN-GVe"/>
-                                </connections>
-                            </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="会社ロゴ２.png" translatesAutoresizingMaskIntoConstraints="NO" id="aDL-RV-qZt">
                                 <rect key="frame" x="112" y="189" width="800" height="158"/>
                                 <autoresizingMask key="autoresizingMask"/>
