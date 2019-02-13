@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  HelloWorld2
+//  EntranceBell
 //
-//  Created by USER on 2019/01/18.
+//  Created by USER on 2019/01/27.
 //  Copyright © 2019 USER. All rights reserved.
 //
 
