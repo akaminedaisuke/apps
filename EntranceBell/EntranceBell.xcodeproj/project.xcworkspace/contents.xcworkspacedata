@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:&#x4f1a;&#x793e;&#x30ed;&#x30b3;&#x3099;&#xff12;.png">
-   </FileRef>
-   <FileRef
       location = "self:">
    </FileRef>
 </Workspace>

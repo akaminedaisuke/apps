@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet var mainMessage: UILabel!
     @IBOutlet var button: UIButton!
     var lineBreakMode:NSLineBreakMode!
-    var audioPlayer : AVAudioPlayer! = nil
+    var audioPlayer : AVAudioPlayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         audioPlayer.currentTime = 0
         audioPlayer.play()
         mainMessage.text = "担当者が参ります 暫くお待ち下さい"
-        //Touchボタン押下後、一定時間で元のメッセージへ戻す
+        //Touchボタン押下後、一定時間で元のメッセージへ戻す処理
         DispatchQueue.main.asyncAfter(deadline: .now() + 5){
             self.mainMessage.text = "ご来社ありがとうございます。ようこそエヌワンへ！\nご用の方は下のボタンにタッチして下さい。"
         }
