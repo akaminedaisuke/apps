@@ -18,7 +18,9 @@
 		CE2258AA220818EF002178F3 /* 会社ロゴ２.png in Resources */ = {isa = PBXBuildFile; fileRef = CE2258A9220818EF002178F3 /* 会社ロゴ２.png */; };
 		CE2258AB22082C6B002178F3 /* EntranceBellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C541521FD8D7E00E01031 /* EntranceBellTests.swift */; };
 		CE3B630B22004F1F009239B8 /* info-lady1_info-lady1-shibarakuomachi1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE1C74CD21FF00FD0030EB3B /* info-lady1_info-lady1-shibarakuomachi1.mp3 */; };
-		CEEB763D2213E4C70052B8D5 /* configViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB763C2213E4C70052B8D5 /* configViewController.swift */; };
+		CEDBB045221E7F8C00D4D489 /* TimeChooseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDBB044221E7F8C00D4D489 /* TimeChooseCell.swift */; };
+		CEEC5D68221BD6DB0026C7E4 /* configViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC5D67221BD6DB0026C7E4 /* configViewController.swift */; };
+		CEEC5D6C221BDFAA0026C7E4 /* TimeChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC5D6B221BDFAA0026C7E4 /* TimeChooseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +57,9 @@
 		CE1C542F21FD8DD400E01031 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		CE1C74CD21FF00FD0030EB3B /* info-lady1_info-lady1-shibarakuomachi1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "info-lady1_info-lady1-shibarakuomachi1.mp3"; path = "/Users/user/Desktop/EntranceBell/EntranceBell/info-lady1_info-lady1-shibarakuomachi1.mp3"; sourceTree = "<absolute>"; };
 		CE2258A9220818EF002178F3 /* 会社ロゴ２.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "会社ロゴ２.png"; sourceTree = "<group>"; };
-		CEEB763C2213E4C70052B8D5 /* configViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = configViewController.swift; sourceTree = "<group>"; };
+		CEDBB044221E7F8C00D4D489 /* TimeChooseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeChooseCell.swift; sourceTree = "<group>"; };
+		CEEC5D67221BD6DB0026C7E4 /* configViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = configViewController.swift; sourceTree = "<group>"; };
+		CEEC5D6B221BDFAA0026C7E4 /* TimeChooseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeChooseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +114,9 @@
 			children = (
 				CE1C540021FD8D7D00E01031 /* AppDelegate.swift */,
 				CE1C540221FD8D7D00E01031 /* ViewController.swift */,
-				CEEB763C2213E4C70052B8D5 /* configViewController.swift */,
+				CEEC5D67221BD6DB0026C7E4 /* configViewController.swift */,
+				CEEC5D6B221BDFAA0026C7E4 /* TimeChooseViewController.swift */,
+				CEDBB044221E7F8C00D4D489 /* TimeChooseCell.swift */,
 				CE1C540421FD8D7D00E01031 /* Main.storyboard */,
 				CE1C540721FD8D7D00E01031 /* Assets.xcassets */,
 				CE2258A9220818EF002178F3 /* 会社ロゴ２.png */,
@@ -280,9 +286,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEEC5D6C221BDFAA0026C7E4 /* TimeChooseViewController.swift in Sources */,
 				CE1C540321FD8D7D00E01031 /* ViewController.swift in Sources */,
+				CEEC5D68221BD6DB0026C7E4 /* configViewController.swift in Sources */,
 				CE1C540121FD8D7D00E01031 /* AppDelegate.swift in Sources */,
-				CEEB763D2213E4C70052B8D5 /* configViewController.swift in Sources */,
+				CEDBB045221E7F8C00D4D489 /* TimeChooseCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

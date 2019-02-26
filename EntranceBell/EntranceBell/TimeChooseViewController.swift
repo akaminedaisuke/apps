@@ -1,5 +1,5 @@
 //
-//  configViewController.swift
+//  TimeChooseViewController.swift
 //  EntranceBell
 //
 //  Created by USER on 2019/02/19.
@@ -8,32 +8,31 @@
 
 import UIKit
 
-import UIKit
+class TimeChooseViewController: UIViewController , UITableViewDelegate, UITableViewDataSource {
+    let tCC = TimeChooseCell()
+    @IBOutlet var ChooseTable: UITableView!
 
-class configViwController: UIViewController , UITableViewDelegate, UITableViewDataSource{
-    
-    @IBOutlet var Config: UITableView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        Config.delegate = self
+        ChooseTable.delegate = self
         
-        Config.dataSource = self
+        ChooseTable.dataSource = self
     }
     
-    let configItem = ["作動時間変更"]
+    let chooseItem = ["5秒後" , "10秒後" , "15秒後" , "30秒後" , "45秒後" , "60秒後"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return configItem.count;
+        return chooseItem.count;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell: UITableViewCell = Config.dequeueReusableCell(withIdentifier: "ConfigCell" , for: indexPath)
-    cell.textLabel!.text = configItem[indexPath.row]
-    return cell;
+        let cell: UITableViewCell = ChooseTable.dequeueReusableCell(withIdentifier: "TimeChooseCell" , for: indexPath)
+        cell.textLabel!.text = chooseItem[indexPath.row]
+        return cell;
     }
+    
     
     /*
     // MARK: - Navigation
