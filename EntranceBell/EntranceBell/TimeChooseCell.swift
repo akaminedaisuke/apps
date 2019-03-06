@@ -12,16 +12,6 @@ class TimeChooseCell: UITableViewCell {
     //セルの内容を定義するクラス？
     //以下でスイッチの動きを制御するのか？
     let Vc = ViewController()
-    @IBOutlet var chooseSwitch: UIView!
-    @IBOutlet var label: UILabel!
-    @IBAction func TimeSwitch(_ sender: UISwitch) {
-        if sender.isOn{
-            label.text = "ON"
-            Vc.funcTime = 10
-        }else{
-         label.text = "OFF"
-        }
-    }
     
     override func awakeFromNib() {
         super.awakeFromNib()

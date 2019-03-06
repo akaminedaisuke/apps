@@ -55,7 +55,7 @@
 		CE1C542021FD8D7E00E01031 /* EntranceBellUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntranceBellUITests.swift; sourceTree = "<group>"; };
 		CE1C542221FD8D7E00E01031 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE1C542F21FD8DD400E01031 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		CE1C74CD21FF00FD0030EB3B /* info-lady1_info-lady1-shibarakuomachi1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "info-lady1_info-lady1-shibarakuomachi1.mp3"; path = "/Users/user/Desktop/EntranceBell/EntranceBell/info-lady1_info-lady1-shibarakuomachi1.mp3"; sourceTree = "<absolute>"; };
+		CE1C74CD21FF00FD0030EB3B /* info-lady1_info-lady1-shibarakuomachi1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "info-lady1_info-lady1-shibarakuomachi1.mp3"; path = "EntranceBell/info-lady1_info-lady1-shibarakuomachi1.mp3"; sourceTree = SOURCE_ROOT; };
 		CE2258A9220818EF002178F3 /* 会社ロゴ２.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "会社ロゴ２.png"; sourceTree = "<group>"; };
 		CEDBB044221E7F8C00D4D489 /* TimeChooseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeChooseCell.swift; sourceTree = "<group>"; };
 		CEEC5D67221BD6DB0026C7E4 /* configViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = configViewController.swift; sourceTree = "<group>"; };
