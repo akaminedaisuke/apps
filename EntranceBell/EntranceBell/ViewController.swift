@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet var button: UIButton!
     var lineBreakMode:NSLineBreakMode!
     var audioPlayer : AVAudioPlayer!
-    var funcTime : Int = 0 //設定画面から時間を制御するために作動時間を変数化
+    var funcTime : Int = 0//設定画面から時間を制御するために作動時間を変数化
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,10 +43,11 @@ class ViewController: UIViewController {
         audioPlayer.play()
         mainMessage.text = "担当者が参ります 暫くお待ち下さい"
         //Touchボタン押下後、一定時間で元のメッセージへ戻す処理
-        funcTime = 5 //初期設定を５秒とする。設定画面のクラスへインスタンスした後、funcTimeを初期化する事で制御できないか？
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5)
+        let Tcv = TimeChooseViewController()
+        funcTime = Tcv.voidtableView(_, didSelectRowAt: IndexPath)
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(funcTime))
         {
-            self.mainMessage.text = "ご来社ありがとうございます。ようこそエヌワンへ！\nご用の方は下のボタンにタッチして下さい。"
+        self.mainMessage.text = "ご来社ありがとうございます。ようこそエヌワンへ！\nご用の方は下のボタンにタッチして下さい。"
         }
     }
     
