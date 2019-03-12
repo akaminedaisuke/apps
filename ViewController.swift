@@ -43,12 +43,11 @@ class ViewController: UIViewController {
         audioPlayer.play()
         mainMessage.text = "担当者が参ります 暫くお待ち下さい"
         //Touchボタン押下後、一定時間で元のメッセージへ戻す処理
-        
-        funcTime = 5 //考え１：初期設定を５秒とする。設定画面のクラスへインスタンスした後、funcTimeを初期化する事で制御できないか？
-        //考え２：.now() + 5 の数字の部分を変数で表す事ができないか？そうしないと作動時間を制御できない？
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5)
+        let Tcv = TimeChooseViewController()
+        //funcTime = Tcv.voidtableView()
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(funcTime))
         {
-            self.mainMessage.text = "ご来社ありがとうございます。ようこそエヌワンへ！\nご用の方は下のボタンにタッチして下さい。"
+        self.mainMessage.text = "ご来社ありがとうございます。ようこそエヌワンへ！\nご用の方は下のボタンにタッチして下さい。"
         }
     }
     

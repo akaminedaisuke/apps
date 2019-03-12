@@ -12,16 +12,18 @@ class TimeChooseViewController: UIViewController , UITableViewDelegate, UITableV
     
     @IBOutlet var ChooseTable: UITableView!
     //選択できる時間
+    @IBOutlet var returnButton: UIButton!
+    @IBOutlet var toMainButton: UIButton!
     let chooseItem = ["5秒後" , "10秒後" , "15秒後" , "30秒後" , "45秒後" , "60秒後"]
     
-    //セルに数値を組み込めないか。組み込んだ数値を作動時間とする。方法１
-    //let chooseItem2 = [5 , 10 , 15 , 30 , 45 , 60]
+    var settingTime = 0
+        //settingTime = voidtableView(_tableView: UITableView, didSelectRowAt indexPath : IndexPath)  //(エラー「Expected declaration」）
     
-    //Dictionary型の変数で配列を作る方法はどうか？（定義はできる）方法２
-    //let chooseItem : Dictionary = ["5秒後":5 , "10秒後":10 , "15秒後":15 , "30秒後":30 , "45秒後":45 , "60秒後":60]
-    
-    @IBAction func ChooseTime(_ segue: UIStoryboardSegue) {}
-    
+    //24行目のvoidtableViewの引数の処理
+    //func ChooseRow(){
+        //settingTime = voidtableView(_,didSelectRowAt:IndexPath)
+    //}
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -43,19 +45,33 @@ class TimeChooseViewController: UIViewController , UITableViewDelegate, UITableV
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: UITableViewCell = ChooseTable.dequeueReusableCell(withIdentifier: "TimeChooseCell" , for: indexPath)
-        //cell.textLabel!.text = chooseItem[indexPath.row]
         cell.textLabel!.text = chooseItem[indexPath.row]
-        //cell.TimeChooseCell(chooseItem2[indexPath.row])
         return cell;
     }
 
     //セルが選択された時に呼び出される
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath : IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath : IndexPath){
         let cell = ChooseTable.cellForRow(at: indexPath)
         //チェックマークを入れる
         cell?.accessoryType = .checkmark
     }
-    
+    //選択されたセルによって設定時間を変える
+    func voidtableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)->Int {
+        if(indexPath.row == 0){
+            settingTime = 5
+        }else if(indexPath.row == 1){
+            settingTime = 10
+        }else if(indexPath.row == 2){
+            settingTime = 15
+        }else if(indexPath.row == 3){
+            settingTime = 30
+        }else if(indexPath.row == 4){
+            settingTime = 45
+        }else if(indexPath.row == 5){
+            settingTime = 60
+        }
+        return settingTime
+    }
     //セルの選択が外れた時に呼び出される
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath : IndexPath) {
         let cell = ChooseTable.cellForRow(at: indexPath)
