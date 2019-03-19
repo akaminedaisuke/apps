@@ -41,6 +41,10 @@ class TimeChooseViewController: UIViewController , UITableViewDelegate, UITableV
         elementOfText = chooseItem.map{String($0) + "秒"}
         let cell: UITableViewCell = ChooseTable.dequeueReusableCell(withIdentifier: "TimeChooseCell" , for: indexPath)
         cell.textLabel!.text = elementOfText[indexPath.row]
+        //再度画面が呼び出された時、選択したセルに対して付けるチェックマークを表示
+        if(TimeChooseViewController.indexElement == chooseItem[indexPath.row]){
+            cell.accessoryType = .checkmark
+        }
         return cell;
     }
     //セルが選択された時に呼び出される
@@ -57,18 +61,6 @@ class TimeChooseViewController: UIViewController , UITableViewDelegate, UITableV
         cell?.accessoryType = .none
     }
     
-    //func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //var elementOfText : [String] = []
-        //elementOfText = chooseItem.map{String($0) + "秒"}
-        //let cell: UITableViewCell = ChooseTable.dequeueReusableCell(withIdentifier: "TimeChooseCell" , for: indexPath)
-        //cell.textLabel!.text = elementOfText[indexPath.row]
-        //if(TimeChooseViewController.indexElement == chooseItem[indexPath.row]){
-            //cell.accessoryType = .checkmark
-        //}else if(TimeChooseViewController.indexElement < 0){
-            //cell.accessoryType = .none
-        //}
-        //return cell;
-    //}
     /*
     // MARK: - Navigation
 
