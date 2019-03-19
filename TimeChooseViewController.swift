@@ -11,19 +11,14 @@ import UIKit
 class TimeChooseViewController: UIViewController , UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var ChooseTable: UITableView!
-    //選択できる時間
+    
     @IBOutlet var returnButton: UIButton!
     @IBOutlet var toMainButton: UIButton!
-    let chooseItem = ["5秒後" , "10秒後" , "15秒後" , "30秒後" , "45秒後" , "60秒後"]
     
-    var settingTime = 0
-        //settingTime = voidtableView(_tableView: UITableView, didSelectRowAt indexPath : IndexPath)  //(エラー「Expected declaration」）
+    let chooseItem = [ 5 , 10 , 15 , 30 , 45 , 60 ]
     
-    //24行目のvoidtableViewの引数の処理
-    //func ChooseRow(){
-        //settingTime = voidtableView(_,didSelectRowAt:IndexPath)
-    //}
-
+    static var indexElement = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -33,9 +28,7 @@ class TimeChooseViewController: UIViewController , UITableViewDelegate, UITableV
         ChooseTable.dataSource = self
         //複数選択をできないようにする
         ChooseTable.allowsMultipleSelection = false
-        
         //ChooseTable.tableFooterView = UIView(frame: .zero)
-
         self.view.addSubview(ChooseTable)
     }
     
@@ -44,33 +37,18 @@ class TimeChooseViewController: UIViewController , UITableViewDelegate, UITableV
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var elementOfText : [String] = []
+        elementOfText = chooseItem.map{String($0) + "秒"}
         let cell: UITableViewCell = ChooseTable.dequeueReusableCell(withIdentifier: "TimeChooseCell" , for: indexPath)
-        cell.textLabel!.text = chooseItem[indexPath.row]
+        cell.textLabel!.text = elementOfText[indexPath.row]
         return cell;
     }
-
     //セルが選択された時に呼び出される
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath : IndexPath){
         let cell = ChooseTable.cellForRow(at: indexPath)
+        TimeChooseViewController.indexElement = chooseItem[indexPath.row]
         //チェックマークを入れる
         cell?.accessoryType = .checkmark
-    }
-    //選択されたセルによって設定時間を変える
-    func voidtableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)->Int {
-        if(indexPath.row == 0){
-            settingTime = 5
-        }else if(indexPath.row == 1){
-            settingTime = 10
-        }else if(indexPath.row == 2){
-            settingTime = 15
-        }else if(indexPath.row == 3){
-            settingTime = 30
-        }else if(indexPath.row == 4){
-            settingTime = 45
-        }else if(indexPath.row == 5){
-            settingTime = 60
-        }
-        return settingTime
     }
     //セルの選択が外れた時に呼び出される
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath : IndexPath) {
@@ -79,6 +57,18 @@ class TimeChooseViewController: UIViewController , UITableViewDelegate, UITableV
         cell?.accessoryType = .none
     }
     
+    //func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        //var elementOfText : [String] = []
+        //elementOfText = chooseItem.map{String($0) + "秒"}
+        //let cell: UITableViewCell = ChooseTable.dequeueReusableCell(withIdentifier: "TimeChooseCell" , for: indexPath)
+        //cell.textLabel!.text = elementOfText[indexPath.row]
+        //if(TimeChooseViewController.indexElement == chooseItem[indexPath.row]){
+            //cell.accessoryType = .checkmark
+        //}else if(TimeChooseViewController.indexElement < 0){
+            //cell.accessoryType = .none
+        //}
+        //return cell;
+    //}
     /*
     // MARK: - Navigation
 
