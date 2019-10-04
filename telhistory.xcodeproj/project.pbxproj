@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		78AA2E35559E56AF75A6150C /* Pods_telhistory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB516D734CEB6183779187A6 /* Pods_telhistory.framework */; };
+		C706FCD8177780390F700D50 /* Pods_telhistoryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A95989F31C9793C9A6FAFCD /* Pods_telhistoryTests.framework */; };
 		CE63BF392345BA9C007F23C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63BF382345BA9C007F23C8 /* AppDelegate.swift */; };
 		CE63BF3B2345BA9C007F23C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63BF3A2345BA9C007F23C8 /* ViewController.swift */; };
 		CE63BF3E2345BA9C007F23C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE63BF3C2345BA9C007F23C8 /* Main.storyboard */; };
@@ -14,6 +16,14 @@
 		CE63BF432345BA9D007F23C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE63BF412345BA9D007F23C8 /* LaunchScreen.storyboard */; };
 		CE63BF4E2345BA9D007F23C8 /* telhistoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63BF4D2345BA9D007F23C8 /* telhistoryTests.swift */; };
 		CE63BF592345BA9D007F23C8 /* telhistoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63BF582345BA9D007F23C8 /* telhistoryUITests.swift */; };
+		CE7543792345BED000199AD8 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7543772345BED000199AD8 /* Realm.framework */; };
+		CE75437A2345BED000199AD8 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE7543772345BED000199AD8 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE75437B2345BED000199AD8 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7543782345BED000199AD8 /* RealmSwift.framework */; };
+		CE75437C2345BED000199AD8 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE7543782345BED000199AD8 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE75437F2345C09200199AD8 /* telhistorymodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE75437E2345C09200199AD8 /* telhistorymodel.swift */; };
+		CE7543812345C38800199AD8 /* Pods_telhistory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7543802345C38800199AD8 /* Pods_telhistory.framework */; };
+		CE7543822345C38800199AD8 /* Pods_telhistory.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE7543802345C38800199AD8 /* Pods_telhistory.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D7209DBD6B730C784490700C /* Pods_telhistory_telhistoryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F39EB66A95C7ADA5C1D2187 /* Pods_telhistory_telhistoryUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +43,32 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CE75437D2345BED100199AD8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CE7543822345C38800199AD8 /* Pods_telhistory.framework in Embed Frameworks */,
+				CE75437C2345BED000199AD8 /* RealmSwift.framework in Embed Frameworks */,
+				CE75437A2345BED000199AD8 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3C94443922AF98D4C7BD320F /* Pods-telhistoryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-telhistoryTests.release.xcconfig"; path = "Target Support Files/Pods-telhistoryTests/Pods-telhistoryTests.release.xcconfig"; sourceTree = "<group>"; };
+		3F39EB66A95C7ADA5C1D2187 /* Pods_telhistory_telhistoryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_telhistory_telhistoryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AD3FEBA84372DF898F5A9FE /* Pods-telhistory-telhistoryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-telhistory-telhistoryUITests.release.xcconfig"; path = "Target Support Files/Pods-telhistory-telhistoryUITests/Pods-telhistory-telhistoryUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6C625C363809407D743F7239 /* Pods-telhistoryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-telhistoryTests.debug.xcconfig"; path = "Target Support Files/Pods-telhistoryTests/Pods-telhistoryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8A95989F31C9793C9A6FAFCD /* Pods_telhistoryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_telhistoryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB516D734CEB6183779187A6 /* Pods_telhistory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_telhistory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B29CE7B049283E5B94DDEAA1 /* Pods-telhistory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-telhistory.debug.xcconfig"; path = "Target Support Files/Pods-telhistory/Pods-telhistory.debug.xcconfig"; sourceTree = "<group>"; };
+		BA769AD9E86B790CBDAB30D5 /* Pods-telhistory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-telhistory.release.xcconfig"; path = "Target Support Files/Pods-telhistory/Pods-telhistory.release.xcconfig"; sourceTree = "<group>"; };
+		CD2F134E2747C52847AB6211 /* Pods-telhistory-telhistoryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-telhistory-telhistoryUITests.debug.xcconfig"; path = "Target Support Files/Pods-telhistory-telhistoryUITests/Pods-telhistory-telhistoryUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CE63BF352345BA9C007F23C8 /* telhistory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = telhistory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE63BF382345BA9C007F23C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE63BF3A2345BA9C007F23C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +82,10 @@
 		CE63BF542345BA9D007F23C8 /* telhistoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = telhistoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE63BF582345BA9D007F23C8 /* telhistoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = telhistoryUITests.swift; sourceTree = "<group>"; };
 		CE63BF5A2345BA9D007F23C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE7543772345BED000199AD8 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE7543782345BED000199AD8 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE75437E2345C09200199AD8 /* telhistorymodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = telhistorymodel.swift; sourceTree = "<group>"; };
+		CE7543802345C38800199AD8 /* Pods_telhistory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_telhistory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +93,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE7543792345BED000199AD8 /* Realm.framework in Frameworks */,
+				CE7543812345C38800199AD8 /* Pods_telhistory.framework in Frameworks */,
+				78AA2E35559E56AF75A6150C /* Pods_telhistory.framework in Frameworks */,
+				CE75437B2345BED000199AD8 /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C706FCD8177780390F700D50 /* Pods_telhistoryTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +112,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7209DBD6B730C784490700C /* Pods_telhistory_telhistoryUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67B9917BFBD6FB7A094F3F35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE7543802345C38800199AD8 /* Pods_telhistory.framework */,
+				CE7543772345BED000199AD8 /* Realm.framework */,
+				CE7543782345BED000199AD8 /* RealmSwift.framework */,
+				AB516D734CEB6183779187A6 /* Pods_telhistory.framework */,
+				3F39EB66A95C7ADA5C1D2187 /* Pods_telhistory_telhistoryUITests.framework */,
+				8A95989F31C9793C9A6FAFCD /* Pods_telhistoryTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		78AB2DC1314A3757FF4F29E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B29CE7B049283E5B94DDEAA1 /* Pods-telhistory.debug.xcconfig */,
+				BA769AD9E86B790CBDAB30D5 /* Pods-telhistory.release.xcconfig */,
+				CD2F134E2747C52847AB6211 /* Pods-telhistory-telhistoryUITests.debug.xcconfig */,
+				6AD3FEBA84372DF898F5A9FE /* Pods-telhistory-telhistoryUITests.release.xcconfig */,
+				6C625C363809407D743F7239 /* Pods-telhistoryTests.debug.xcconfig */,
+				3C94443922AF98D4C7BD320F /* Pods-telhistoryTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CE63BF2C2345BA9C007F23C8 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +152,8 @@
 				CE63BF4C2345BA9D007F23C8 /* telhistoryTests */,
 				CE63BF572345BA9D007F23C8 /* telhistoryUITests */,
 				CE63BF362345BA9C007F23C8 /* Products */,
+				78AB2DC1314A3757FF4F29E5 /* Pods */,
+				67B9917BFBD6FB7A094F3F35 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +172,7 @@
 			children = (
 				CE63BF382345BA9C007F23C8 /* AppDelegate.swift */,
 				CE63BF3A2345BA9C007F23C8 /* ViewController.swift */,
+				CE75437E2345C09200199AD8 /* telhistorymodel.swift */,
 				CE63BF3C2345BA9C007F23C8 /* Main.storyboard */,
 				CE63BF3F2345BA9D007F23C8 /* Assets.xcassets */,
 				CE63BF412345BA9D007F23C8 /* LaunchScreen.storyboard */,
@@ -132,9 +206,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE63BF5D2345BA9D007F23C8 /* Build configuration list for PBXNativeTarget "telhistory" */;
 			buildPhases = (
+				93DF77CDFF10A69B8E240C8F /* [CP] Check Pods Manifest.lock */,
 				CE63BF312345BA9C007F23C8 /* Sources */,
 				CE63BF322345BA9C007F23C8 /* Frameworks */,
 				CE63BF332345BA9C007F23C8 /* Resources */,
+				0F31CCC986DFE5674FCE8FDA /* [CP] Embed Pods Frameworks */,
+				CE75437D2345BED100199AD8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +226,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE63BF602345BA9D007F23C8 /* Build configuration list for PBXNativeTarget "telhistoryTests" */;
 			buildPhases = (
+				5C0CF8A4AABF59E02C0ACA55 /* [CP] Check Pods Manifest.lock */,
 				CE63BF452345BA9D007F23C8 /* Sources */,
 				CE63BF462345BA9D007F23C8 /* Frameworks */,
 				CE63BF472345BA9D007F23C8 /* Resources */,
@@ -167,9 +245,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE63BF632345BA9D007F23C8 /* Build configuration list for PBXNativeTarget "telhistoryUITests" */;
 			buildPhases = (
+				F7CDA240BBECBFF7C534C168 /* [CP] Check Pods Manifest.lock */,
 				CE63BF502345BA9D007F23C8 /* Sources */,
 				CE63BF512345BA9D007F23C8 /* Frameworks */,
 				CE63BF522345BA9D007F23C8 /* Resources */,
+				8FD1682D1874815B4F5FA811 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -251,6 +331,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0F31CCC986DFE5674FCE8FDA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-telhistory/Pods-telhistory-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-telhistory/Pods-telhistory-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-telhistory/Pods-telhistory-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C0CF8A4AABF59E02C0ACA55 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-telhistoryTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FD1682D1874815B4F5FA811 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-telhistory-telhistoryUITests/Pods-telhistory-telhistoryUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-telhistory-telhistoryUITests/Pods-telhistory-telhistoryUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-telhistory-telhistoryUITests/Pods-telhistory-telhistoryUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93DF77CDFF10A69B8E240C8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-telhistory-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7CDA240BBECBFF7C534C168 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-telhistory-telhistoryUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE63BF312345BA9C007F23C8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -258,6 +441,7 @@
 			files = (
 				CE63BF3B2345BA9C007F23C8 /* ViewController.swift in Sources */,
 				CE63BF392345BA9C007F23C8 /* AppDelegate.swift in Sources */,
+				CE75437F2345C09200199AD8 /* telhistorymodel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,10 +614,12 @@
 		};
 		CE63BF5E2345BA9D007F23C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B29CE7B049283E5B94DDEAA1 /* Pods-telhistory.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = telhistory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -447,10 +633,12 @@
 		};
 		CE63BF5F2345BA9D007F23C8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA769AD9E86B790CBDAB30D5 /* Pods-telhistory.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = telhistory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,6 +652,7 @@
 		};
 		CE63BF612345BA9D007F23C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C625C363809407D743F7239 /* Pods-telhistoryTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +673,7 @@
 		};
 		CE63BF622345BA9D007F23C8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C94443922AF98D4C7BD320F /* Pods-telhistoryTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -504,6 +694,7 @@
 		};
 		CE63BF642345BA9D007F23C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD2F134E2747C52847AB6211 /* Pods-telhistory-telhistoryUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -523,6 +714,7 @@
 		};
 		CE63BF652345BA9D007F23C8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AD3FEBA84372DF898F5A9FE /* Pods-telhistory-telhistoryUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
