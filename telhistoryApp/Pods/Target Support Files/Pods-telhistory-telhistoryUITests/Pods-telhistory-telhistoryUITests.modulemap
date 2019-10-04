@@ -1,6 +1,0 @@
-framework module Pods_telhistory_telhistoryUITests {
-  umbrella header "Pods-telhistory-telhistoryUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
